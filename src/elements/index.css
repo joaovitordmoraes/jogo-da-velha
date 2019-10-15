@@ -1,5 +1,10 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--size-base);
+}
+
 ul li {
-    font-size: 14px;
-    color: #3a4042;
-    margin-bottom: 15px;
+    font-size: var(--size-small);
+    color: var(--color-second);
+    margin-bottom: var(--spacing-small);
 }
