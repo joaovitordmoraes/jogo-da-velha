@@ -3,9 +3,9 @@ import "./styles.css";
 
 const BurgerMenu = () => {
     return (
-        <div className="burger-menu">
-            <span className="line"></span>
-        </div>
+        <a href="#menu" className="burger-menu">
+            Menu
+        </a>
     );
 };
 
