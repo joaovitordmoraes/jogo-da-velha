@@ -4,6 +4,7 @@ import "./styles.css";
 const LogoColab = () => {
     return (
         <svg
+            className="logo-collab"
             xmlns="http://www.w3.org/2000/svg"
             width="131"
             height="21"

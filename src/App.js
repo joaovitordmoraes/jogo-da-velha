@@ -1,9 +1,8 @@
 import React from "react";
-// import Sobre from "./objects/Sobre";
-import BurgerMenu from "./objects/BurgerMenu";
+import Header from "./components/Header";
 
 function App() {
-    return <BurgerMenu />;
+    return <Header />;
 }
 
 export default App;

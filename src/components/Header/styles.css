@@ -1,0 +1,15 @@
+.header {
+    padding: 20px 34px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu-button {
+    display: flex;
+}
+
+.header .menu-button > .sobre {
+    margin-right: 10px;
+}
