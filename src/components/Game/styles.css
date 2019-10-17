@@ -1,0 +1,25 @@
+.game {
+    display: flex;
+    justify-content: center;
+}
+
+.game > .board {
+    padding: 15px;
+}
+
+.game > .board > .square {
+    display: inline-flex;
+    border-bottom: 4px solid red;
+}
+
+.game > .board > .square:nth-child(7),
+.game > .board > .square:nth-child(8),
+.game > .board > .square:nth-child(9) {
+    border-bottom: none;
+}
+.game > .board > .square:nth-child(2),
+.game > .board > .square:nth-child(5),
+.game > .board > .square:nth-child(8) {
+    border-right: 4px solid blue;
+    border-left: 4px solid blue;
+}
