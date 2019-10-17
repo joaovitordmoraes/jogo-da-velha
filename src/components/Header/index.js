@@ -1,8 +1,8 @@
 import React from "react";
+import "./styles.css";
 import LogoCollab from "../../objects/LogoCollab";
 import Sobre from "../../objects/Sobre";
 import BurgerMenu from "../../objects/BurgerMenu";
-import "./styles.css";
 
 const Header = () => {
     return (
