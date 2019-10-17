@@ -8,10 +8,8 @@ const Header = () => {
     return (
         <header className="header">
             <LogoCollab />
-            <div className="menu-button">
-                <Sobre />
-                <BurgerMenu />
-            </div>
+            <Sobre />
+            <BurgerMenu />
         </header>
     );
 };
