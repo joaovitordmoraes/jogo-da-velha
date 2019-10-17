@@ -4,7 +4,7 @@ import "./styles.css";
 const BurgerMenu = () => {
     return (
         <a href="#menu" className="burger-menu">
-            Menu
+            <span className="center">Menu</span>
         </a>
     );
 };
