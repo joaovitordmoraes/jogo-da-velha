@@ -1,14 +1,15 @@
 import React from "react";
 import Header from "./components/Header";
-import Game from "./components/Game";
 import Marcacao from "./objects/Marcacao";
+import Board from "./objects/Board";
 
 function App() {
     return (
         <>
             <Header />
-            <Game />
-            <Marcacao player="o" />
+            <Board>
+                <Marcacao player="o" />
+            </Board>
         </>
     );
 }
