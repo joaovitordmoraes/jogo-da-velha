@@ -2,6 +2,6 @@
     width: 290px;
     height: 290px;
     background-color: var(--color-zero);
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 var(--color-light-negative);
+    border-radius: var(--space-radius);
 }
