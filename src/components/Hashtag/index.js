@@ -1,21 +1,42 @@
 import React from "react";
+import "./styles.css";
 import Board from "../../objects/Board";
 import Marcacao from "../../objects/Marcacao";
 
 const Hashtag = () => {
     return (
         <Board>
-            <Marcacao player="o" />
-            <Marcacao player="x" />
-            <Marcacao player="o" />
+            <ul className="hashtag">
+                <li className="item">
+                    <Marcacao player="o" />
+                </li>
+                <li className="item">
+                    <Marcacao player="x" />
+                </li>
+                <li className="item">
+                    <Marcacao player="o" />
+                </li>
 
-            <Marcacao player="x" />
-            <Marcacao player="o" />
-            <Marcacao player="x" />
+                <li className="item">
+                    <Marcacao player="x" />
+                </li>
+                <li className="item">
+                    <Marcacao player="o" />
+                </li>
+                <li className="item">
+                    <Marcacao player="x" />
+                </li>
 
-            <Marcacao player="o" />
-            <Marcacao player="o" />
-            <Marcacao player="x" />
+                <li className="item">
+                    <Marcacao player="o" />
+                </li>
+                <li className="item">
+                    <Marcacao player="o" />
+                </li>
+                <li className="item">
+                    <Marcacao player="x" />
+                </li>
+            </ul>
         </Board>
     );
 };
