@@ -12,7 +12,7 @@
     background-color: var(--color-third);
 }
 
-.hashtag .item {
+.hashtag > .item {
     background-color: var(--color-zero);
     display: flex;
     justify-content: center;
