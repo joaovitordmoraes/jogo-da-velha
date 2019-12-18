@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const Label = ({content}) => {
+const Label = ({htmlFor, content}) => {
 
     return (
-        <label className="label" htmlFor="">{content}</label>
+        <label className="label" htmlFor={htmlFor}>{content}</label>
     );
 };
 
