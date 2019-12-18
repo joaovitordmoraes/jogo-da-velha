@@ -1,3 +1,7 @@
+.input {
+    display: none;
+}
+
 .label::before {
     content: '';
     border: 3px solid var(--color-fourth);
@@ -6,4 +10,8 @@
     height: 20px;
     display: inline-block;
     box-sizing: border-box;
+}
+
+.input:checked + .label::before {
+    background-color: var(--color-first);
 }
