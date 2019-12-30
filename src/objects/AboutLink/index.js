@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-const Sobre = () => {
+const AboutLink = () => {
     return (
         <a href="#to-do" className="sobre">
             Sobre
@@ -9,4 +9,4 @@ const Sobre = () => {
     );
 };
 
-export default Sobre;
+export default AboutLink;

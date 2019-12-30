@@ -1,14 +1,14 @@
 import React from "react";
 import "./styles.css";
 import LogoCollab from "../../objects/LogoCollab";
-import Sobre from "../../objects/Sobre";
+import AboutLink from "../../objects/AboutLink";
 import BurgerMenu from "../../objects/BurgerMenu";
 
 const Header = () => {
     return (
         <header className="header">
             <LogoCollab />
-            <Sobre />
+            <AboutLink />
             <BurgerMenu />
         </header>
     );
