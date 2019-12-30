@@ -1,9 +1,11 @@
 import React from "react";
 import "./styles.css";
 
-const About = () => {
+const About = ({children, className}) => {
     return (
-        <article className="about"></article>
+        <article className="about">
+            {children}
+        </article>
     );
 }
 
