@@ -3,14 +3,14 @@ import "./styles.css";
 import playerO from "../../images/Circle.png";
 import playerX from "../../images/X.png";
 
-const Marcacao = ({ player }) => {
+const Player = ({ player }) => {
     const players = [];
     players["x"] = playerX;
     players["o"] = playerO;
 
     return (
         <>
-            <button className="marcacao">
+            <button className="player">
                 <img
                     src={players[player]}
                     alt={`Jogador ${player.toUpperCase()}`}
@@ -20,4 +20,4 @@ const Marcacao = ({ player }) => {
     );
 };
 
-export default Marcacao;
+export default Player;
