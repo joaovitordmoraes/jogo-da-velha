@@ -19,13 +19,13 @@
     top: -1px;
     left: 2px;
     position: absolute;
-    transform-origin: left top;
+    transform-origin: top left;
     transform: rotate(45deg);
 }
 
 .icon-close::after {
     top: -1px;
-    right: 8px;
+    right: 2px;
     position: absolute;
     transform-origin: top right;
     transform: rotate(-45deg);
