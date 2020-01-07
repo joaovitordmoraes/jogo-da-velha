@@ -6,6 +6,7 @@ import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
 import AboutLink from "./objects/AboutLink";
 import IconClose from "./objects/IconClose";
+import LogoCollab from "./objects/LogoCollab";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <Checkbox id="show" value="show" content="Mostrar eventos" type="checkbox" />
 
             <About>
+                <LogoCollab />
                 <AboutLink className="-light" />
                 <IconClose />
             </About>
