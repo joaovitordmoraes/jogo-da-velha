@@ -20,5 +20,12 @@
 .profile-user > .description {
     font-size: var(--size-small);
     width: 80%;
+    margin: 0 auto var(--spacing-very-large);
+}
+
+.profile-user > .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
     margin: 0 auto;
 }
