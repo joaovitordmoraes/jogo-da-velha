@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 import Checkbox from "./objects/Checkbox";
@@ -8,14 +8,14 @@ import Hashtag from "./components/Hashtag";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
 
-let activeAbout = "";
-
-const handleClick = () => {
-    console.log("clicou");
-    return activeAbout = "-active";
-}
-
 const App = () => {
+
+    const [activeAbout, setActiveAbout] = useState("");
+
+    const handleClick = () => {
+        setActiveAbout("-active");
+    }
+
     return (
         <main className="app">
             <Header onClick={handleClick} />
