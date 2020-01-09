@@ -12,18 +12,22 @@ const App = () => {
 
     const [activeAbout, setActiveAbout] = useState("");
 
-    const handleClick = () => {
+    const handleClickAdd = () => {
         setActiveAbout("-active");
+    }
+
+    const handleClickRemove = () => {
+        setActiveAbout("");
     }
 
     return (
         <main className="app">
-            <Header onClick={handleClick} />
+            <Header onClick={handleClickAdd} />
             <Hashtag />
             <Checkbox id="show" value="show" content="Mostrar eventos" type="checkbox" />
 
             <About className={activeAbout}>
-                <HeaderInternal />
+                <HeaderInternal onClick={handleClickRemove} />
                 <ProfileUser />
             </About>
         </main>

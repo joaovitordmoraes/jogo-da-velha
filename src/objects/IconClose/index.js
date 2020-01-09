@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const IconClose = () => {
+const IconClose = ({ onClick }) => {
 
     return (
-        <a href="" className="icon-close">
+        <a href="#close-menu" className="icon-close" onClick={onClick}>
             <span className="content">Fechar</span>
         </a>
     );
