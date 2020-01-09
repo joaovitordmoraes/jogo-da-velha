@@ -3,3 +3,7 @@
     height: 100vh;
     background-color: var(--color-negative);
 }
+
+.about > .header-internal {
+    margin-bottom: var(--spacing-very-large);
+}
