@@ -4,12 +4,12 @@ import LogoCollab from "../../objects/LogoCollab";
 import AboutLink from "../../objects/AboutLink";
 import BurgerMenu from "../../objects/BurgerMenu";
 
-const Header = () => {
+const Header = ({ onClick }) => {
     return (
         <header className="header">
             <LogoCollab />
-            <AboutLink />
-            <BurgerMenu />
+            <AboutLink onClick={onClick} />
+            <BurgerMenu onClick={onClick} />
         </header>
     );
 };

@@ -8,14 +8,21 @@ import Hashtag from "./components/Hashtag";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
 
+let activeAbout = "";
+
+const handleClick = () => {
+    console.log("clicou");
+    return activeAbout = "-active";
+}
+
 const App = () => {
     return (
         <main className="app">
-            <Header />
+            <Header onClick={handleClick} />
             <Hashtag />
             <Checkbox id="show" value="show" content="Mostrar eventos" type="checkbox" />
 
-            <About className="">
+            <About className={activeAbout}>
                 <HeaderInternal />
                 <ProfileUser />
             </About>
