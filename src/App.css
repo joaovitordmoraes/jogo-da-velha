@@ -7,13 +7,13 @@
     margin: 0 auto 85px auto;
 }
 
-.app > .about {
+.app > .about-menu {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.app > .board {
+.app > .board-game {
     width: 90vw;
     height: 90vw;
     display: inline-block;

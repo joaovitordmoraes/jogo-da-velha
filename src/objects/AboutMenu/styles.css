@@ -1,4 +1,4 @@
-.about {
+.about-menu {
     width: 100vw;
     height: 100vh;
     background-color: var(--color-negative);
@@ -6,10 +6,10 @@
     transition: transform 200ms linear;
 }
 
-.about.-active {
+.about-menu.-active {
     transform: translateX(0);
 }
 
-.about > .header-internal {
+.about-menu > .header-internal {
     margin-bottom: var(--spacing-very-large);
 }

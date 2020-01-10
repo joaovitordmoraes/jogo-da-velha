@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
-import Board from "../../objects/Board";
+import BoardGame from "../../objects/BoardGame";
 import Player from "../../objects/Player";
 
 const HashtagBoard = () => {
     return (
-        <Board>
+        <BoardGame>
             <ul className="hashtag-board">
                 <li className="item">
                     <Player player="o" />
@@ -37,7 +37,7 @@ const HashtagBoard = () => {
                     <Player player="x" />
                 </li>
             </ul>
-        </Board>
+        </BoardGame>
     );
 };
 

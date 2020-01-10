@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import "./App.css";
 
-import Checkbox from "./objects/Checkbox";
-import About from "./objects/About";
+import CheckboxEvents from "./objects/CheckboxEvents";
+import AboutMenu from "./objects/AboutMenu";
 import HeaderGame from "./components/HeaderGame";
 import HashtagBoard from "./components/HashtagBoard";
 import HeaderInternal from "./components/HeaderInternal";
@@ -24,12 +24,12 @@ const App = () => {
         <main className="app">
             <HeaderGame onClick={handleClickAdd} />
             <HashtagBoard />
-            <Checkbox id="show" value="show" content="Mostrar eventos" type="checkbox" />
+            <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox" />
 
-            <About className={activeAbout}>
+            <AboutMenu className={activeAbout}>
                 <HeaderInternal onClick={handleClickRemove} />
                 <ProfileUser />
-            </About>
+            </AboutMenu>
         </main>
     );
 }
