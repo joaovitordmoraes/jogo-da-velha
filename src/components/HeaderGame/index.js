@@ -6,7 +6,7 @@ import BurgerMenu from "../../objects/BurgerMenu";
 
 const Header = ({ onClick }) => {
     return (
-        <header className="header">
+        <header className="header-game">
             <LogoCollab />
             <AboutLink onClick={onClick} />
             <BurgerMenu onClick={onClick} />
