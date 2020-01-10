@@ -1,40 +1,40 @@
 import React from "react";
 import "./styles.css";
 import BoardGame from "../../objects/BoardGame";
-import Player from "../../objects/Player";
+import PlayerGame from "../../objects/PlayerGame";
 
 const HashtagBoard = () => {
     return (
         <BoardGame>
             <ul className="hashtag-board">
                 <li className="item">
-                    <Player player="o" />
+                    <PlayerGame player="o" />
                 </li>
                 <li className="item">
-                    <Player player="x" />
+                    <PlayerGame player="x" />
                 </li>
                 <li className="item">
-                    <Player player="o" />
-                </li>
-
-                <li className="item">
-                    <Player player="x" />
-                </li>
-                <li className="item">
-                    <Player player="o" />
-                </li>
-                <li className="item">
-                    <Player player="x" />
+                    <PlayerGame player="o" />
                 </li>
 
                 <li className="item">
-                    <Player player="o" />
+                    <PlayerGame player="x" />
                 </li>
                 <li className="item">
-                    <Player player="o" />
+                    <PlayerGame player="o" />
                 </li>
                 <li className="item">
-                    <Player player="x" />
+                    <PlayerGame player="x" />
+                </li>
+
+                <li className="item">
+                    <PlayerGame player="o" />
+                </li>
+                <li className="item">
+                    <PlayerGame player="o" />
+                </li>
+                <li className="item">
+                    <PlayerGame player="x" />
                 </li>
             </ul>
         </BoardGame>
