@@ -3,10 +3,10 @@ import "./styles.css";
 import Board from "../../objects/Board";
 import Player from "../../objects/Player";
 
-const Hashtag = () => {
+const HashtagBoard = () => {
     return (
         <Board>
-            <ul className="hashtag">
+            <ul className="hashtag-board">
                 <li className="item">
                     <Player player="o" />
                 </li>
@@ -41,4 +41,4 @@ const Hashtag = () => {
     );
 };
 
-export default Hashtag;
+export default HashtagBoard;

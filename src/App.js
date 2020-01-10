@@ -4,7 +4,7 @@ import "./App.css";
 import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
 import Header from "./components/Header";
-import Hashtag from "./components/Hashtag";
+import HashtagBoard from "./components/HashtagBoard";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
 
@@ -23,7 +23,7 @@ const App = () => {
     return (
         <main className="app">
             <Header onClick={handleClickAdd} />
-            <Hashtag />
+            <HashtagBoard />
             <Checkbox id="show" value="show" content="Mostrar eventos" type="checkbox" />
 
             <About className={activeAbout}>
