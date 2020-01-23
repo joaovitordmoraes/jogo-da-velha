@@ -1,0 +1,10 @@
+.label-field {
+    font-size: var(--size-small);
+    font-weight: bold;
+    color: var(--color-fourth);
+}
+
+.label-field::selection {
+    background-color: var(--color-first);
+    color: var(--color-zero);
+}

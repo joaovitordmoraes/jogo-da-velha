@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.css";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ onClick }) => {
     return (
-        <a href="#menu" className="burger-menu">
+        <a href="#menu" className="burger-menu" onClick={onClick}>
             <span className="center">Menu</span>
         </a>
     );

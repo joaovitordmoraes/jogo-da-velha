@@ -1,0 +1,11 @@
+.header-internal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-medium) var(--spacing-large);
+}
+
+.header-internal > .about-link {
+    margin-left: auto;
+    margin-right: var(--spacing-small);
+}

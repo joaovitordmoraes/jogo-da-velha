@@ -1,5 +1,0 @@
-.board {
-    background-color: var(--color-zero);
-    box-shadow: 0 3px 6px 0 var(--color-light-negative);
-    border-radius: var(--space-radius);
-}

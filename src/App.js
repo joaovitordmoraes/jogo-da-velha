@@ -1,21 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Hashtag from "./components/Hashtag";
-import Checkbox from "./objects/Checkbox";
-import About from "./objects/About";
-import AboutLink from "./objects/AboutLink";
+
+import CheckboxEvents from "./objects/CheckboxEvents";
+import AboutMenu from "./objects/AboutMenu";
+import PlayerClick from "./objects/PlayerClick";
+import HeaderGame from "./components/HeaderGame";
+import HashtagBoard from "./components/HashtagBoard";
+import HeaderInternal from "./components/HeaderInternal";
+import ProfileUser from "./components/ProfileUser";
+
 
 const App = () => {
+
+    const [activeAbout, setActiveAbout] = useState("");
+
+    const handleClickAdd = () => {
+        setActiveAbout("-active");
+    }
+
+    const handleClickRemove = () => {
+        setActiveAbout("");
+    }
+
     return (
         <main className="app">
-            <Header />
-            <Hashtag />
-            <Checkbox id="show" value="show" content="Mostrar eventos" type="checkbox" />
+            <HeaderGame onClick={handleClickAdd} />
+            <HashtagBoard />
+            <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox" />
+            <PlayerClick />
 
-            <About>
-                <AboutLink className="-light" />
-            </About>
+            <AboutMenu className={activeAbout}>
+                <HeaderInternal onClick={handleClickRemove} />
+                <ProfileUser />
+            </AboutMenu>
         </main>
     );
 }

@@ -1,0 +1,23 @@
+.input-field {
+    display: none;
+}
+
+.label-field {
+    display: inline-flex;
+    align-items: center;
+}
+
+.label-field::before {
+    content: '';
+    border: 3px solid var(--color-fourth);
+    border-radius: var(--space-radius);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.input-field:checked + .label-field::before {
+    background-color: var(--color-first);
+}

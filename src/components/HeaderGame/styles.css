@@ -1,0 +1,15 @@
+.header-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-game > .about-link {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.header-game > .burger-menu {
+    width: 25px;
+}
