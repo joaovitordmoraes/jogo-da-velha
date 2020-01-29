@@ -1,5 +1,8 @@
 .app {
     text-align: center;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 .app > .header-game {
@@ -19,4 +22,18 @@
     display: inline-block;
     box-sizing: border-box;
     margin-bottom: 40px;
+}
+
+.app > .player-events {
+    margin-top: var(--spacing-large);
+}
+
+.app .player-click {
+    padding: var(--spacing-extra-small) 0;
+    width: 128px;
+    margin: 0 auto var(--spacing-medium) auto;
+}
+
+.app .player-click:last-of-type {
+    margin-bottom: 0;
 }

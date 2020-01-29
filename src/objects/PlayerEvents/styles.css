@@ -1,0 +1,4 @@
+.player-events {
+    display: flex;
+    flex-direction: column;
+}

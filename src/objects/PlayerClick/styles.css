@@ -1,0 +1,11 @@
+.player-click {
+    font-size: var(--size-small);
+    color: var(--color-negative);
+    background-color: var(--color-zero);
+    border-radius: var(--space-radius-medium);
+    display: inline-block;
+}
+
+.player-click.-green {
+    background-color: var(--color-nineth);
+}
