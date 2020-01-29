@@ -29,7 +29,7 @@ const App = () => {
     }
 
     return (
-        <main className="app">
+        <main id="main" className="app">
             <HeaderGame onClick={handleClickAdd} />
             <HashtagBoard />
             <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox" onClick={handleClickCheckbox} />

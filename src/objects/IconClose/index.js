@@ -4,7 +4,7 @@ import "./styles.css";
 const IconClose = ({ onClick }) => {
 
     return (
-        <a href="#close-menu" className="icon-close" onClick={onClick}>
+        <a href="#main" className="icon-close" onClick={onClick}>
             <span className="content">Fechar</span>
         </a>
     );

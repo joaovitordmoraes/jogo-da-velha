@@ -2,7 +2,7 @@ import React from "react";
 
 const IconSocial = ({ action, src, alt }) => {
     return (
-        <a href={action} target="_blank">
+        <a href={action} rel="noopener noreferrer" target="_blank">
             <img className="icon-social" src={src} alt={alt} />
         </a>
     );
