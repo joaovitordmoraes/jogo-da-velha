@@ -24,13 +24,12 @@
     margin-bottom: 40px;
 }
 
-.app > .player-events {
-    margin-top: var(--spacing-large);
+.app > .checkbox-events {
+    margin-bottom: var(--spacing-large);
 }
 
 .app .player-click {
-    padding: var(--spacing-extra-small) 0;
-    width: 128px;
+    padding: var(--spacing-extra-small) var(--spacing-medium);
     margin: 0 auto var(--spacing-medium) auto;
 }
 

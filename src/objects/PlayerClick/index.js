@@ -1,19 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const PlayerClick = () => {
+const PlayerClick = ({ content, className = "" }) => {
     return (
         <>
-            <div className="player-click">Adicionou O</div>
-            <div className="player-click">Adicionou X</div>
-            <div className="player-click">Adicionou O</div>
-            <div className="player-click">Adicionou X</div>
-            <div className="player-click">Adicionou O</div>
-            <div className="player-click">Adicionou X</div>
-            <div className="player-click">Adicionou O</div>
-            <div className="player-click">Adicionou X</div>
-            <div className="player-click">Adicionou O</div>
-            <div className="player-click -green">Empate!</div>
+            <output className={`player-click ${className}`}>{content}</output>
         </>
     );
 }

@@ -1,0 +1,9 @@
+.player-events > .action {
+    margin-bottom: var(--spacing-small);
+}
+
+.player-events .player-click {
+    display: inline-block;
+    width: 130px;
+    box-sizing: border-box;
+}
