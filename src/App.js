@@ -13,7 +13,6 @@ import PlayerEvents from "./components/PlayerEvents";
 const App = () => {
 
     const [activeAbout, setActiveAbout] = useState("");
-    const [activePlayerEvents, setActivePlayerEvents] = useState("");
 
     const handleClickAdd = () => {
         setActiveAbout("-active");
@@ -23,17 +22,13 @@ const App = () => {
         setActiveAbout("");
     }
 
-    const handleClick = () => {
-        setActivePlayerEvents(old => old === "-active" ? "" : "-active");
-    }
-
     return (
         <main id="main" className="app">
             <HeaderGame onClick={handleClickAdd} />
             <HashtagBoard />
-            <CheckboxEvents onClick={handleClick} id="show" value="show" content="Mostrar eventos" type="checkbox"  />
+            <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox"  />
             
-            <PlayerEvents className={activePlayerEvents} />
+            <PlayerEvents />
 
             <AboutMenu className={activeAbout}>
                 <HeaderInternal onClick={handleClickRemove} />

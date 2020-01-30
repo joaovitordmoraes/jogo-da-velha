@@ -24,7 +24,7 @@
     margin-bottom: 40px;
 }
 
-.app > .checkbox-events {
+.app > .label-field {
     margin-bottom: var(--spacing-large);
 }
 
@@ -36,6 +36,6 @@
     display: none;
 }
 
-.app > .player-events.-active {
+.app > .input-field:checked ~ .player-events {
     display: block;
 }
