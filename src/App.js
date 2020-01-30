@@ -24,8 +24,7 @@ const App = () => {
     }
 
     const handleClick = () => {
-        console.log('Vamo que vamo!!!');
-        setActivePlayerEvents("-active");
+        setActivePlayerEvents(old => old === "-active" ? "" : "-active");
     }
 
     return (
