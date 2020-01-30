@@ -84,3 +84,6 @@
     border-bottom-right-radius: 2px;
 }
 
+.hashtag-board .player-game {
+    flex-basis: 100%;
+}
