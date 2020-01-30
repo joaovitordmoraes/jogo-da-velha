@@ -3,10 +3,10 @@ import "./styles.css";
 
 import PlayerClick from "../../objects/PlayerClick";
 
-const PlayerEvents = () => {
+const PlayerEvents = ({ className = "" }) => {
 
     return (
-        <ol className="player-events">
+        <ol className={`player-events ${className}`}>
             <li className="action">
                 <PlayerClick content="Adicionou O" />
             </li>

@@ -30,9 +30,12 @@
 
 .app .player-click {
     padding: var(--spacing-extra-small) var(--spacing-medium);
-    margin: 0 auto var(--spacing-medium) auto;
 }
 
-.app .player-click:last-of-type {
-    margin-bottom: 0;
+.app > .player-events {
+    display: none;
+}
+
+.app > .player-events.-active {
+    display: block;
 }

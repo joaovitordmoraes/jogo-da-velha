@@ -3,14 +3,14 @@ import "./styles.css";
 import InputField from "../InputField";
 import LabelField from "../LabelField";
 
-const Checkbox = ({id = "", value = "", content = "", onClick}) => {
+const CheckboxEvents = ({id = "", value = "", content = "", onClick}) => {
 
     return (
-        <div className="checkbox-events" onClick={onClick}>
+        <div className="checkbox-events">
             <InputField id={id} type="checkbox" value={value} content={content} />
-            <LabelField htmlFor={id} content={content} />
+            <LabelField onClick={onClick} htmlFor={id} content={content} />
         </div>
     );
 };
 
-export default Checkbox;
+export default CheckboxEvents;
