@@ -8,33 +8,33 @@ const HashtagBoard = () => {
         <BoardGame>
             <ul className="hashtag-board">
                 <li className="item">
-                    <PlayerGame player="o" />
+                    <PlayerGame />
                 </li>
                 <li className="item">
-                    <PlayerGame player="x" />
+                    <PlayerGame />
                 </li>
                 <li className="item">
-                    <PlayerGame player="o" />
-                </li>
-
-                <li className="item">
-                    <PlayerGame player="x" />
-                </li>
-                <li className="item">
-                    <PlayerGame player="o" />
-                </li>
-                <li className="item">
-                    <PlayerGame player="x" />
+                    <PlayerGame />
                 </li>
 
                 <li className="item">
-                    <PlayerGame player="o" />
+                    <PlayerGame />
                 </li>
                 <li className="item">
-                    <PlayerGame player="o" />
+                    <PlayerGame />
                 </li>
                 <li className="item">
-                    <PlayerGame player="x" />
+                    <PlayerGame />
+                </li>
+
+                <li className="item">
+                    <PlayerGame />
+                </li>
+                <li className="item">
+                    <PlayerGame />
+                </li>
+                <li className="item">
+                    <PlayerGame />
                 </li>
             </ul>
         </BoardGame>

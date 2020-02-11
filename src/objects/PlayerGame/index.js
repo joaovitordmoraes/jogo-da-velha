@@ -11,10 +11,7 @@ const PlayerGame = ({ player }) => {
     return (
         <>
             <button className="player-game">
-                <img
-                    src={players[player]}
-                    alt={`Jogador ${player.toUpperCase()}`}
-                />
+                {player && <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`} />}
             </button>
         </>
     );
