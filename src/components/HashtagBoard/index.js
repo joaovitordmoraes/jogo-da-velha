@@ -30,7 +30,7 @@ const HashtagBoard = () => {
         <BoardGame>
             <ul className="hashtag-board">
                 {players.map(player => (
-                    <li key={player.id} className="item" onClick={() => handleClick(player.id)}>
+                    <li key={player.id} className="item" onClick={() => player.content === '' && handleClick(player.id)}>
                         <PlayerGame id={player.id} content={player.content} />
                     </li>
                 ))}
