@@ -3,7 +3,7 @@ import "./styles.css";
 import BoardGame from "../../objects/BoardGame";
 import PlayerGame from "../../objects/PlayerGame";
 
-const HashtagBoard = () => {
+const HashtagBoard = ({ history }) => {
 
     const [nextPlayer, setNextPlayer] = useState("x");
     const [players, setPlayers] = useState([
@@ -20,8 +20,10 @@ const HashtagBoard = () => {
 
     const handleClick = (id) => {
         setNextPlayer(old => old === "x" ? "o" : "x" );
-
+        
         setPlayers(old => old.map(player => player.id === id ? {id, content: nextPlayer} : player));
+
+        history(nextPlayer);
     };
 
     return (

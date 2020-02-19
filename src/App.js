@@ -13,7 +13,7 @@ import PlayerEvents from "./components/PlayerEvents";
 const App = () => {
 
     const [activeAbout, setActiveAbout] = useState("");
-    const history = ["Adicionou X", "Adicionou O", "Adicionou X"]
+    const history = []
 
     const handleClickAdd = () => {
         setActiveAbout("-active");
@@ -23,10 +23,15 @@ const App = () => {
         setActiveAbout("");
     }
 
+    const addEvents = (player) => {
+        history.push(`Adicionou ${player.toUpperCase()}`);
+        console.log(history);
+    }
+
     return (
         <main id="main" className="app">
             <HeaderGame onClick={handleClickAdd} />
-            <HashtagBoard />
+            <HashtagBoard history={addEvents} />
             <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox"  />
             
             <PlayerEvents history={history} />
