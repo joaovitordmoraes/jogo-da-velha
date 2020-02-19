@@ -13,6 +13,7 @@ import PlayerEvents from "./components/PlayerEvents";
 const App = () => {
 
     const [activeAbout, setActiveAbout] = useState("");
+    const history = ["Adicionou X", "Adicionou O", "Adicionou X"]
 
     const handleClickAdd = () => {
         setActiveAbout("-active");
@@ -28,7 +29,7 @@ const App = () => {
             <HashtagBoard />
             <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox"  />
             
-            <PlayerEvents />
+            <PlayerEvents history={history} />
 
             <AboutMenu className={activeAbout}>
                 <HeaderInternal onClick={handleClickRemove} />

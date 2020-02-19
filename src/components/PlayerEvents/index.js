@@ -3,37 +3,12 @@ import "./styles.css";
 
 import PlayerClick from "../../objects/PlayerClick";
 
-const PlayerEvents = ({ className = "" }) => {
+const PlayerEvents = ({ className = "", history }) => {
 
     return (
         <ol className={`player-events ${className}`}>
-            <li className="action">
-                <PlayerClick content="Adicionou O" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Adicionou X" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Adicionou O" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Adicionou X" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Adicionou O" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Adicionou X" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Adicionou O" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Adicionou X" />
-            </li>
-            <li className="action">
-                <PlayerClick content="Empate!" className="-end" />
-            </li>
+            {history.map((content, key) => <li key={key} className="action"><PlayerClick content={content} /></li>)}
+            
         </ol>
     );
 }

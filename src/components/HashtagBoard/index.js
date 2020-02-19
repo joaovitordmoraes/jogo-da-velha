@@ -19,8 +19,6 @@ const HashtagBoard = () => {
     ]);
 
     const handleClick = (id) => {
-        console.log("Próximo jogador ", nextPlayer);
-        console.log("Qual o ID do elemento clidado: ", id)
         setNextPlayer(old => old === "x" ? "o" : "x" );
 
         setPlayers(old => old.map(player => player.id === id ? {id, content: nextPlayer} : player));
