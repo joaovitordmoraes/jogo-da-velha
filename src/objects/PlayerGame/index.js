@@ -13,18 +13,8 @@ const PlayerGame = ({ player = false }) => {
     const players = [];
     players["x"] = playerX;
     players["o"] = playerO;
-    
-    
 
-    const handleClick = () => {
-        if (firstPlayer === "x") {
-            setStatePlayer("x");
-            firstPlayer = "o";
-        } else if (firstPlayer === "o") {
-            setStatePlayer("o");
-            firstPlayer = "x";
-        }
-    };
+    const handleClick = () => setStatePlayer(player);
 
     return (
         <>
