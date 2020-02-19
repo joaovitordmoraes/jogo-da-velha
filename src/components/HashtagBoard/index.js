@@ -6,45 +6,34 @@ import PlayerGame from "../../objects/PlayerGame";
 const HashtagBoard = () => {
 
     const [nextPlayer, setNextPlayer] = useState("x");
+    const [players, setPlayers] = useState([
+        {id: 1, content: ''},
+        {id: 2, content: ''},
+        {id: 3, content: ''},
+        {id: 4, content: ''},
+        {id: 5, content: ''},
+        {id: 6, content: ''},
+        {id: 7, content: ''},
+        {id: 8, content: ''},
+        {id: 9, content: ''},
+    ]);
 
-    const handleClick = () => {
+    const handleClick = (id) => {
         console.log("Próximo jogador ", nextPlayer);
-
+        console.log("Qual o ID do elemento clidado: ", id)
         setNextPlayer(old => old === "x" ? "o" : "x" );
+
+        setPlayers(old => old.map(player => player.id === id ? {id, content: nextPlayer} : player));
     };
 
     return (
         <BoardGame>
-            <ul className="hashtag-board" onClick={handleClick}>
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
-                <li className="item">
-                    <PlayerGame player={nextPlayer} />
-                </li>
+            <ul className="hashtag-board">
+                {players.map(player => (
+                    <li key={player.id} className="item" onClick={() => handleClick(player.id)}>
+                        <PlayerGame id={player.id} content={player.content} />
+                    </li>
+                ))}
             </ul>
         </BoardGame>
     );
