@@ -19,6 +19,8 @@
 .app > .board-game {
     width: 90vw;
     height: 90vw;
+    max-width: 330px;
+    max-height: 330px;
     display: inline-block;
     box-sizing: border-box;
     margin-bottom: 40px;
