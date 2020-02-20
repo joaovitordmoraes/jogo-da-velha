@@ -39,3 +39,14 @@
 .app > .input-field:checked ~ .player-events {
     display: block;
 }
+
+@media (min-width: 740px) {
+    .app > .header-game {
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
