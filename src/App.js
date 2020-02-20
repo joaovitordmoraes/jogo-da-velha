@@ -13,7 +13,7 @@ import PlayerEvents from "./components/PlayerEvents";
 const App = () => {
 
     const [activeAbout, setActiveAbout] = useState("");
-    const history = []
+    const [history, setHistory] = useState([]);
 
     const handleClickAdd = () => {
         setActiveAbout("-active");
@@ -24,8 +24,7 @@ const App = () => {
     }
 
     const addEvents = (player) => {
-        history.push(`Adicionou ${player.toUpperCase()}`);
-        console.log(history);
+        setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
     }
 
     return (
