@@ -3,8 +3,9 @@
 }
 
 .label-field {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .label-field::before {
