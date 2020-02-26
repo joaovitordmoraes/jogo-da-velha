@@ -55,6 +55,15 @@
         padding-right: 10%;
     }
 
+    .app .header-internal {
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     .app .hashtagboard-wrapper {
         display: inline-flex;
         justify-content: center;
