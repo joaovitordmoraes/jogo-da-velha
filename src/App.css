@@ -17,7 +17,7 @@
     left: 0;
 }
 
-.app > .board-game {
+.app .board-game {
     width: 90vw;
     height: 90vw;
     max-width: 330px;
@@ -29,7 +29,7 @@
     margin-bottom: 40px;
 }
 
-.app > .label-field {
+.app .label-field {
     margin-bottom: var(--spacing-large);
 }
 
@@ -37,21 +37,37 @@
     padding: var(--spacing-extra-small) var(--spacing-medium);
 }
 
-.app > .player-events {
+.app .player-events {
     display: none;
 }
 
-.app > .input-field:checked ~ .player-events {
+.app .input-field:checked ~ .player-events {
     display: block;
 }
 
 @media (min-width: 740px) {
-    .app > .header-game {
+    .app .header-game {
         box-sizing: border-box;
         width: 100%;
         margin-left: 0;
         margin-right: 0;
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    .app .hashtagboard-wrapper {
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .app .board-game {
+        margin-right: var(--spacing-large);
+    }
+
+    .app .label-field {
+        position: absolute;
+        left: 95px;
+        top: 370px;
     }
 }

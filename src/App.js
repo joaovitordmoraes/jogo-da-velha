@@ -8,6 +8,7 @@ import HashtagBoard from "./components/HashtagBoard";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
 import PlayerEvents from "./components/PlayerEvents";
+import HashtagBoardWrapper from "./objects/HashtagBoardWrapper";
 
 
 const App = () => {
@@ -30,10 +31,13 @@ const App = () => {
     return (
         <main id="main" className="app">
             <HeaderGame onClick={handleClickAdd} />
-            <HashtagBoard history={addEvents} />
-            <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox"  />
-            
-            <PlayerEvents history={history} />
+
+            <HashtagBoardWrapper>
+                <HashtagBoard history={addEvents} />
+                <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox"  />
+                
+                <PlayerEvents history={history} />
+            </HashtagBoardWrapper>
 
             <AboutMenu className={activeAbout}>
                 <HeaderInternal onClick={handleClickRemove} />
