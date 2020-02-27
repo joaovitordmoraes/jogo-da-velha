@@ -38,11 +38,19 @@
 }
 
 .app .player-events {
-    display: none;
+    opacity: 0;
+    position: relative;
+    transition: all 300ms linear;
+    transform: translateX(-130%);
+    z-index: -1;
+    min-width: 130px;
 }
 
 .app .input-field:checked ~ .player-events {
-    display: block;
+    position: relative;
+    opacity: 1;
+    transition: all 300ms linear;
+    transform: translateX(0);
 }
 
 @media (min-width: 740px) {
@@ -70,8 +78,8 @@
         position: relative;
     }
 
-    .app .board-game {
-        margin-right: var(--spacing-large);
+    .app .player-events {
+        margin-left: var(--spacing-large);
     }
 
     .app .label-field {
