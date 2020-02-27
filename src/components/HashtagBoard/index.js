@@ -6,6 +6,23 @@ import PlayerGame from "../../objects/PlayerGame";
 const HashtagBoard = ({ history }) => {
 
     const [nextPlayer, setNextPlayer] = useState("x");
+    const [round, setRound] = useState(0);
+    const [boardHistory, setBoardHistory] = useState([
+        {
+            round: 0,
+            state: [
+                {id: 1, content: ''},
+                {id: 2, content: ''},
+                {id: 3, content: ''},
+                {id: 4, content: ''},
+                {id: 5, content: ''},
+                {id: 6, content: ''},
+                {id: 7, content: ''},
+                {id: 8, content: ''},
+                {id: 9, content: ''},
+            ]
+        }
+    ]);
     const [players, setPlayers] = useState([
         {id: 1, content: ''},
         {id: 2, content: ''},
