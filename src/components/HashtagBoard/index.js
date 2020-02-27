@@ -31,7 +31,6 @@ const HashtagBoard = ({ history }) => {
             state: old[lastRound].state.map(player => player.id === id ? {id, content: nextPlayer} : player)
         }]);
         setLastRound(old => old + 1);
-        console.log(boardHistory);
         history(nextPlayer);
     };
 

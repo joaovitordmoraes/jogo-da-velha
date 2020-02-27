@@ -28,6 +28,10 @@ const App = () => {
         setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
     }
 
+    const changeHistory = key => {
+        setHistory(old => old.slice(0, key + 1));
+    }
+
     return (
         <main id="main" className="app">
             <HeaderGame onClick={handleClickAdd} />
@@ -36,7 +40,7 @@ const App = () => {
                 <HashtagBoard history={addEvents} />
                 <CheckboxEvents id="show" value="show" content="Mostrar eventos" type="checkbox"  />
                 
-                <PlayerEvents history={history} />
+                <PlayerEvents history={history} onClick={changeHistory} />
             </HashtagBoardWrapper>
 
             <AboutMenu className={activeAbout}>
