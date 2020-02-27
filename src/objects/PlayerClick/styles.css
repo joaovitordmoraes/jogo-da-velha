@@ -3,6 +3,7 @@
     color: var(--color-negative);
     background-color: var(--color-zero);
     border-radius: var(--space-radius-medium);
+    cursor: pointer;
 }
 
 .player-click.-end {

@@ -14,7 +14,7 @@ import HashtagBoardWrapper from "./objects/HashtagBoardWrapper";
 const App = () => {
 
     const [activeAbout, setActiveAbout] = useState("");
-    const [history, setHistory] = useState([]);
+    const [history, setHistory] = useState(["Start"]);
 
     const handleClickAdd = () => {
         setActiveAbout("-active");

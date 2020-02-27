@@ -26,8 +26,6 @@ const HashtagBoard = ({ history }) => {
 
     const handleClick = (id) => {
         setNextPlayer(old => old === "x" ? "o" : "x" );
-        
-        // setPlayers(old => old.map(player => player.id === id ? {id, content: nextPlayer} : player));
         setBoardHistory(old => [...old, {
             round: lastRound + 1,
             state: old[lastRound].state.map(player => player.id === id ? {id, content: nextPlayer} : player)
